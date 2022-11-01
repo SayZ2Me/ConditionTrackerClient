@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\WorkPanels\Devices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\WorkPanels\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\WorkPanels\Monitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\WorkPanels\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControls\ElementContainers\HidePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\InputHandlers\ButtonResponsive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\InputHandlers\ButtonToggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UserControls\InputHandlers\DropdownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UserControls\InputHandlers\TextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\WindowHandlers\ButtonClose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\WindowHandlers\ButtonMaximize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\WindowHandlers\ButtonMinimize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
