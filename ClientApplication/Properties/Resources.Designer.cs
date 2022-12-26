@@ -143,9 +143,9 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ButtonUnhide {
+        internal static System.Drawing.Bitmap ConditionTracker1 {
             get {
-                object obj = ResourceManager.GetObject("ButtonUnhide", resourceCulture);
+                object obj = ResourceManager.GetObject("ConditionTracker1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -181,6 +181,46 @@ namespace ClientApplication.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon IconConditionTracker {
+            get {
+                object obj = ResourceManager.GetObject("IconConditionTracker", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconDevicesDark {
+            get {
+                object obj = ResourceManager.GetObject("IconDevicesDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconDevicesLight {
+            get {
+                object obj = ResourceManager.GetObject("IconDevicesLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconDevicesMain {
+            get {
+                object obj = ResourceManager.GetObject("IconDevicesMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap IconEdit {
@@ -203,9 +243,9 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconHide {
+        internal static System.Drawing.Bitmap IconHideDark {
             get {
-                object obj = ResourceManager.GetObject("IconHide", resourceCulture);
+                object obj = ResourceManager.GetObject("IconHideDark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +253,49 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconHome {
+        internal static System.Drawing.Bitmap IconHideLight {
             get {
-                object obj = ResourceManager.GetObject("IconHome", resourceCulture);
+                object obj = ResourceManager.GetObject("IconHideLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconHideMain {
+            get {
+                object obj = ResourceManager.GetObject("IconHideMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconHomeDark {
+            get {
+                object obj = ResourceManager.GetObject("IconHomeDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconHomeLight {
+            get {
+                object obj = ResourceManager.GetObject("IconHomeLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconHomeMain {
+            get {
+                object obj = ResourceManager.GetObject("IconHomeMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +313,9 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconLeft {
+        internal static System.Drawing.Bitmap IconLeftBig {
             get {
-                object obj = ResourceManager.GetObject("IconLeft", resourceCulture);
+                object obj = ResourceManager.GetObject("IconLeftBig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +323,29 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconLeftBig {
+        internal static System.Drawing.Bitmap IconLeftDark {
             get {
-                object obj = ResourceManager.GetObject("IconLeftBig", resourceCulture);
+                object obj = ResourceManager.GetObject("IconLeftDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconLeftLight {
+            get {
+                object obj = ResourceManager.GetObject("IconLeftLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconLeftMain {
+            get {
+                object obj = ResourceManager.GetObject("IconLeftMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +373,29 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconLock {
+        internal static System.Drawing.Bitmap IconLockDark {
             get {
-                object obj = ResourceManager.GetObject("IconLock", resourceCulture);
+                object obj = ResourceManager.GetObject("IconLockDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconLockLight {
+            get {
+                object obj = ResourceManager.GetObject("IconLockLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconLockMain {
+            get {
+                object obj = ResourceManager.GetObject("IconLockMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +406,66 @@ namespace ClientApplication.Properties {
         internal static System.Drawing.Bitmap IconMonitor {
             get {
                 object obj = ResourceManager.GetObject("IconMonitor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconMonitorDark {
+            get {
+                object obj = ResourceManager.GetObject("IconMonitorDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconMonitorLight {
+            get {
+                object obj = ResourceManager.GetObject("IconMonitorLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconMonitorMain {
+            get {
+                object obj = ResourceManager.GetObject("IconMonitorMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconOptionsDark {
+            get {
+                object obj = ResourceManager.GetObject("IconOptionsDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconOptionsLight {
+            get {
+                object obj = ResourceManager.GetObject("IconOptionsLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconOptionsMain {
+            get {
+                object obj = ResourceManager.GetObject("IconOptionsMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,16 +493,6 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconRight {
-            get {
-                object obj = ResourceManager.GetObject("IconRight", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap IconRightBig {
             get {
                 object obj = ResourceManager.GetObject("IconRightBig", resourceCulture);
@@ -333,9 +503,9 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconSave {
+        internal static System.Drawing.Bitmap IconRightDark {
             get {
-                object obj = ResourceManager.GetObject("IconSave", resourceCulture);
+                object obj = ResourceManager.GetObject("IconRightDark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +513,79 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconSettings {
+        internal static System.Drawing.Bitmap IconRightLight {
             get {
-                object obj = ResourceManager.GetObject("IconSettings", resourceCulture);
+                object obj = ResourceManager.GetObject("IconRightLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconRightMain {
+            get {
+                object obj = ResourceManager.GetObject("IconRightMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconSaveDark {
+            get {
+                object obj = ResourceManager.GetObject("IconSaveDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconSaveLight {
+            get {
+                object obj = ResourceManager.GetObject("IconSaveLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconSaveMain {
+            get {
+                object obj = ResourceManager.GetObject("IconSaveMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconSettingsDark {
+            get {
+                object obj = ResourceManager.GetObject("IconSettingsDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconSettingsLight {
+            get {
+                object obj = ResourceManager.GetObject("IconSettingsLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconSettingsMain {
+            get {
+                object obj = ResourceManager.GetObject("IconSettingsMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +603,29 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconShutdown {
+        internal static System.Drawing.Bitmap IconShutdownDark {
             get {
-                object obj = ResourceManager.GetObject("IconShutdown", resourceCulture);
+                object obj = ResourceManager.GetObject("IconShutdownDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconShutdownLight {
+            get {
+                object obj = ResourceManager.GetObject("IconShutdownLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconShutdownMain {
+            get {
+                object obj = ResourceManager.GetObject("IconShutdownMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +653,9 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconUnhide {
+        internal static System.Drawing.Bitmap IconUnhideDark {
             get {
-                object obj = ResourceManager.GetObject("IconUnhide", resourceCulture);
+                object obj = ResourceManager.GetObject("IconUnhideDark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +663,49 @@ namespace ClientApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconUser {
+        internal static System.Drawing.Bitmap IconUnhideLight {
             get {
-                object obj = ResourceManager.GetObject("IconUser", resourceCulture);
+                object obj = ResourceManager.GetObject("IconUnhideLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconUnhideMain {
+            get {
+                object obj = ResourceManager.GetObject("IconUnhideMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconUserDark {
+            get {
+                object obj = ResourceManager.GetObject("IconUserDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconUserLight {
+            get {
+                object obj = ResourceManager.GetObject("IconUserLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconUserMain {
+            get {
+                object obj = ResourceManager.GetObject("IconUserMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +766,26 @@ namespace ClientApplication.Properties {
         internal static System.Drawing.Bitmap IndicatorYellow {
             get {
                 object obj = ResourceManager.GetObject("IndicatorYellow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginBanner {
+            get {
+                object obj = ResourceManager.GetObject("LoginBanner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginFade {
+            get {
+                object obj = ResourceManager.GetObject("LoginFade", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

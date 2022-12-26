@@ -36,10 +36,8 @@
             this.DarkThemeLabel = new System.Windows.Forms.Label();
             this.AppClosePanel = new System.Windows.Forms.Panel();
             this.AppCloseToggle = new ClientApplication.UserControls.InputHandlers.ButtonToggle();
-            this.buttonToggle1 = new ClientApplication.UserControls.InputHandlers.ButtonToggle();
             this.AppCloseLabel = new System.Windows.Forms.Label();
             this.AppSettingsPanel = new System.Windows.Forms.Panel();
-            this.SaveApplicationSettings = new System.Windows.Forms.Button();
             this.AppSettingsLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SeetingsContainer)).BeginInit();
             this.SeetingsContainer.Panel1.SuspendLayout();
@@ -103,6 +101,7 @@
             this.DarkThemePanel.Name = "DarkThemePanel";
             this.DarkThemePanel.Size = new System.Drawing.Size(401, 40);
             this.DarkThemePanel.TabIndex = 2;
+            this.DarkThemePanel.Tag = "Panel";
             // 
             // DarkThemeToggle
             // 
@@ -110,10 +109,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DarkThemeToggle.Checked = true;
             this.DarkThemeToggle.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.DarkThemeToggle.DisabledBackColor = System.Drawing.Color.Gray;
-            this.DarkThemeToggle.DisabledToggleColor = System.Drawing.Color.Gainsboro;
-            this.DarkThemeToggle.EnabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(168)))), ((int)(((byte)(164)))));
-            this.DarkThemeToggle.EnabledToggleColor = System.Drawing.Color.WhiteSmoke;
             this.DarkThemeToggle.Location = new System.Drawing.Point(344, 8);
             this.DarkThemeToggle.Margin = new System.Windows.Forms.Padding(8);
             this.DarkThemeToggle.MinimumSize = new System.Drawing.Size(45, 22);
@@ -138,13 +133,13 @@
             // AppClosePanel
             // 
             this.AppClosePanel.Controls.Add(this.AppCloseToggle);
-            this.AppClosePanel.Controls.Add(this.buttonToggle1);
             this.AppClosePanel.Controls.Add(this.AppCloseLabel);
             this.AppClosePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.AppClosePanel.Location = new System.Drawing.Point(0, 70);
             this.AppClosePanel.Name = "AppClosePanel";
             this.AppClosePanel.Size = new System.Drawing.Size(401, 40);
             this.AppClosePanel.TabIndex = 3;
+            this.AppClosePanel.Tag = "BackGround";
             // 
             // AppCloseToggle
             // 
@@ -152,10 +147,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AppCloseToggle.Checked = true;
             this.AppCloseToggle.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AppCloseToggle.DisabledBackColor = System.Drawing.Color.Gray;
-            this.AppCloseToggle.DisabledToggleColor = System.Drawing.Color.Gainsboro;
-            this.AppCloseToggle.EnabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(168)))), ((int)(((byte)(164)))));
-            this.AppCloseToggle.EnabledToggleColor = System.Drawing.Color.WhiteSmoke;
             this.AppCloseToggle.Location = new System.Drawing.Point(344, 8);
             this.AppCloseToggle.Margin = new System.Windows.Forms.Padding(8);
             this.AppCloseToggle.MinimumSize = new System.Drawing.Size(45, 22);
@@ -164,24 +155,6 @@
             this.AppCloseToggle.TabIndex = 2;
             this.AppCloseToggle.UseVisualStyleBackColor = true;
             this.AppCloseToggle.CheckStateChanged += new System.EventHandler(this.AppCloseToggle_CheckStateChanged);
-            // 
-            // buttonToggle1
-            // 
-            this.buttonToggle1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonToggle1.Checked = true;
-            this.buttonToggle1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.buttonToggle1.DisabledBackColor = System.Drawing.Color.Gray;
-            this.buttonToggle1.DisabledToggleColor = System.Drawing.Color.Gainsboro;
-            this.buttonToggle1.EnabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(168)))), ((int)(((byte)(164)))));
-            this.buttonToggle1.EnabledToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonToggle1.Location = new System.Drawing.Point(545, 8);
-            this.buttonToggle1.Margin = new System.Windows.Forms.Padding(8);
-            this.buttonToggle1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.buttonToggle1.Name = "buttonToggle1";
-            this.buttonToggle1.Size = new System.Drawing.Size(49, 22);
-            this.buttonToggle1.TabIndex = 1;
-            this.buttonToggle1.UseVisualStyleBackColor = true;
             // 
             // AppCloseLabel
             // 
@@ -197,28 +170,12 @@
             // 
             // AppSettingsPanel
             // 
-            this.AppSettingsPanel.Controls.Add(this.SaveApplicationSettings);
             this.AppSettingsPanel.Controls.Add(this.AppSettingsLabel);
             this.AppSettingsPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.AppSettingsPanel.Location = new System.Drawing.Point(0, 0);
             this.AppSettingsPanel.Name = "AppSettingsPanel";
             this.AppSettingsPanel.Size = new System.Drawing.Size(401, 70);
             this.AppSettingsPanel.TabIndex = 1;
-            // 
-            // SaveApplicationSettings
-            // 
-            this.SaveApplicationSettings.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SaveApplicationSettings.BackgroundImage = global::ClientApplication.Properties.Resources.IconSave;
-            this.SaveApplicationSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.SaveApplicationSettings.FlatAppearance.BorderSize = 0;
-            this.SaveApplicationSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveApplicationSettings.Location = new System.Drawing.Point(346, 12);
-            this.SaveApplicationSettings.Name = "SaveApplicationSettings";
-            this.SaveApplicationSettings.Size = new System.Drawing.Size(43, 43);
-            this.SaveApplicationSettings.TabIndex = 1;
-            this.SaveApplicationSettings.UseVisualStyleBackColor = true;
-            this.SaveApplicationSettings.Click += new System.EventHandler(this.SaveApplicationSettings_Click);
             // 
             // AppSettingsLabel
             // 
@@ -239,6 +196,7 @@
             this.Controls.Add(this.SeetingsContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Settings";
+            this.Text = "Settings";
             this.Load += new System.EventHandler(this.Settings_Load);
             this.SeetingsContainer.Panel1.ResumeLayout(false);
             this.SeetingsContainer.Panel2.ResumeLayout(false);
@@ -262,10 +220,8 @@
         private Panel DarkThemePanel;
         private Label DarkThemeLabel;
         private UserControls.InputHandlers.ButtonToggle DarkThemeToggle;
-        private Button SaveApplicationSettings;
         private Panel AppClosePanel;
         private UserControls.InputHandlers.ButtonToggle AppCloseToggle;
-        private UserControls.InputHandlers.ButtonToggle buttonToggle1;
         private Label AppCloseLabel;
     }
 }

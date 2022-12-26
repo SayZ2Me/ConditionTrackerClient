@@ -1,71 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Windows.Forms;
-using System.Drawing;
-using System.Drawing.Drawing2D;
+﻿using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using ClientApplication.Services;
+using ClientApplication.Managers;
 
 namespace ClientApplication.UserControls.InputHandlers
 {
     public class ButtonToggle : CheckBox
     {
-        private Color enabledBackColor = SettingsService.MainColor();
-        private Color enabledToggleColor = Color.WhiteSmoke;
-        private Color disabledBackColor = Color.Gray;
-        private Color disabledToggleColor = Color.Gainsboro;
+        private readonly Color _enabledBackColor = SettingsManager.HighlightColor();
+        private readonly Color _enabledToggleColor = Color.WhiteSmoke;
+        private readonly Color _disabledBackColor = SettingsManager.MainColor();
+        private readonly Color _disabledToggleColor = Color.Gainsboro;
+
         private bool solidStyle = true;
 
-        [Category("Внешний вид")]
-        public Color EnabledBackColor
-        {
-            get { return enabledBackColor; }
-            set
-            {
-                enabledBackColor = value;
-                Invalidate();
-            }
-        }
-        [Category("Внешний вид")]
-        public Color EnabledToggleColor
-        {
-            get { return enabledToggleColor; }
-            set
-            {
-                enabledToggleColor = value;
-                Invalidate();
-            }
-        }
-        [Category("Внешний вид")]
-        public Color DisabledBackColor
-        {
-            get { return disabledBackColor; }
-            set
-            {
-                disabledBackColor = value;
-                Invalidate();
-            }
-        }
-        [Category("Внешний вид")]
-        public Color DisabledToggleColor
-        {
-            get { return disabledToggleColor; }
-            set
-            {
-                disabledToggleColor = value;
-                Invalidate();
-            }
-        }
-        [Browsable(false)]
-        public override string Text
-        {
-            get { return base.Text; }
-            set { }
-        }
         [Category("Внешний вид")]
         [DefaultValue(true)]
         public bool SolidStyle
@@ -105,25 +52,25 @@ namespace ClientApplication.UserControls.InputHandlers
             {
                 if (solidStyle)
                 {
-                    e.Graphics.FillPath(new SolidBrush(enabledBackColor), GetFigurePath());
+                    e.Graphics.FillPath(new SolidBrush(_enabledBackColor), GetFigurePath());
                 }
                 else
                 {
-                    e.Graphics.DrawPath(new Pen(enabledBackColor, 2), GetFigurePath());
+                    e.Graphics.DrawPath(new Pen(_enabledBackColor, 2), GetFigurePath());
                 }
-                e.Graphics.FillEllipse(new SolidBrush(enabledToggleColor), new Rectangle(Width - Height + 1, 2, toggleSize, toggleSize));
+                e.Graphics.FillEllipse(new SolidBrush(_enabledToggleColor), new Rectangle(Width - Height + 1, 2, toggleSize, toggleSize));
             }
             else
             {
                 if (solidStyle)
                 {
-                    e.Graphics.FillPath(new SolidBrush(disabledBackColor), GetFigurePath());
+                    e.Graphics.FillPath(new SolidBrush(_disabledBackColor), GetFigurePath());
                 }
                 else
                 {
-                    e.Graphics.DrawPath(new Pen(disabledBackColor, 2), GetFigurePath());
+                    e.Graphics.DrawPath(new Pen(_disabledBackColor, 2), GetFigurePath());
                 }
-                e.Graphics.FillEllipse(new SolidBrush(disabledToggleColor), new Rectangle(2, 2, toggleSize, toggleSize));
+                e.Graphics.FillEllipse(new SolidBrush(_disabledToggleColor), new Rectangle(2, 2, toggleSize, toggleSize));
             }
         }
     }

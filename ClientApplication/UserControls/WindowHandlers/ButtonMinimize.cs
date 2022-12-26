@@ -15,6 +15,7 @@ namespace ClientApplication.UserControls
         public ButtonMinimize()
         {
             InitializeComponent();
+            BackgroundImage = Properties.Resources.ButtonMinimize;
         }
         private void ButtonMinimize_Click(object sender, EventArgs e)
         {

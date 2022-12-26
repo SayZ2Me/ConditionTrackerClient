@@ -1,4 +1,4 @@
-﻿using ClientApplication.Services;
+﻿using ClientApplication.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,14 +19,14 @@ namespace ClientApplication.Forms.WorkPanels
         }
         private void Home_Load(object sender, EventArgs e)
         {
-            BackColor = SettingsService.BackGroundColor();
-            SettingsService.SetThemeColors(Controls);
+            base.BackColor = Managers.SettingsManager.BackGroundColor();
+            Managers.SettingsManager.SetThemeColors(Controls);
         }
         public override void Refresh()
         {
             base.Refresh();
-            BackColor = SettingsService.BackGroundColor();
-            SettingsService.SetThemeColors(Controls);
+            base.BackColor = Managers.SettingsManager.BackGroundColor();
+            Managers.SettingsManager.SetThemeColors(Controls);
         }
     }
 }

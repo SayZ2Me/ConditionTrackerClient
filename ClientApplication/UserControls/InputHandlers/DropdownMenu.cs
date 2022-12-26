@@ -1,4 +1,4 @@
-﻿using ClientApplication.Services;
+﻿using ClientApplication.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,11 +10,11 @@ namespace ClientApplication.UserControls.InputHandlers
 {
     public class DropdownMenu : ContextMenuStrip
     {
-        private bool isMainMenu;
-        private int menuItemHeight = 25;
-        private Color menuItemTextColor = Color.Empty;
-        private Color primaryColor = Color.Empty;
-        private Bitmap menuItemHeaderSize;
+        private bool _isMainMenu;
+        private int _menuItemHeight = 25;
+        private Color _menuItemTextColor = Color.Empty;
+        private Color _primaryColor = Color.Empty;
+        private Bitmap _menuItemHeaderSize;
         public DropdownMenu(IContainer container)
             : base(container)
         {
@@ -22,36 +22,36 @@ namespace ClientApplication.UserControls.InputHandlers
         [Browsable(false)]
         public bool IsMainMenu
         {
-            get { return isMainMenu; }
-            set { isMainMenu = value; }
+            get { return _isMainMenu; }
+            set { _isMainMenu = value; }
         }
         [Browsable(false)]
         public int MenuItemHeight
         {
-            get { return menuItemHeight; }
-            set { menuItemHeight = value; }
+            get { return _menuItemHeight; }
+            set { _menuItemHeight = value; }
         }
         [Browsable(false)]
         public Color MenuItemTextColor
         {
-            get { return menuItemTextColor; }
-            set { menuItemTextColor = value; }
+            get { return _menuItemTextColor; }
+            set { _menuItemTextColor = value; }
         }
         [Browsable(false)]
         public Color PrimaryColor
         {
-            get { return primaryColor; }
-            set { primaryColor = value; }
+            get { return _primaryColor; }
+            set { _primaryColor = value; }
         }
         private void LoadMenuItemHeight()
         {
-            if (isMainMenu)
-                menuItemHeaderSize = new Bitmap(25, 45);
-            else menuItemHeaderSize = new Bitmap(20, menuItemHeight);
+            if (_isMainMenu)
+                _menuItemHeaderSize = new Bitmap(25, 45);
+            else _menuItemHeaderSize = new Bitmap(20, _menuItemHeight);
             foreach (ToolStripMenuItem menuItemL1 in this.Items)
             {
                 menuItemL1.ImageScaling = ToolStripItemImageScaling.None;
-                if (menuItemL1.Image == null) menuItemL1.Image = menuItemHeaderSize;
+                if (menuItemL1.Image == null) menuItemL1.Image = _menuItemHeaderSize;
             }
         }
         protected override void OnHandleCreated(EventArgs e)

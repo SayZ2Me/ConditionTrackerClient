@@ -142,8 +142,8 @@
   <data name="ButtonToolbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonToolbar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonUnhide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonUnhide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ConditionTracker1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConditionTracker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconAddUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconAddUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,26 +154,56 @@
   <data name="IconCalendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconCalendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconConditionTracker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconConditionTracker.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDevicesDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDevicesDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDevicesLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDevicesLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDevicesMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDevicesMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IconEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconFavourite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconFavourite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconHide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconHide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconHideDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHideDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconHideLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHideLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHideMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHideMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHomeDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHomeDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHomeLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHomeLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHomeMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHomeMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IconLeftBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconLeftBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconLeftDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconLeftDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconLeftLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconLeftLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconLeftMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconLeftMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconLink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconLink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,11 +211,35 @@
   <data name="IconLocation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconLocation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconLock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconLock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconLockDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconLockDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconLockLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconLockLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconLockMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconLockMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconMonitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconMonitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconMonitorDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconMonitorDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconMonitorLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconMonitorLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconMonitorMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconMonitorMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconOptionsDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconOptionsDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconOptionsLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconOptionsLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconOptionsMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconOptionsMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconPin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconPin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,23 +247,47 @@
   <data name="IconPinned" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconPinned.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IconRightBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconRightBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconRightDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconRightDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconRightLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconRightLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconRightMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconRightMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSaveDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSaveDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSaveLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSaveLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSaveMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSaveMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSettingsDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSettingsDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSettingsLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSettingsLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSettingsMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSettingsMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconShare" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconShare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconShutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconShutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconShutdownDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconShutdownDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconShutdownLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconShutdownLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconShutdownMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconShutdownMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconToolbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconToolbar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,11 +295,23 @@
   <data name="IconUnfavour" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconUnfavour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconUnhide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconUnhide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconUnhideDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconUnhideDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconUnhideLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconUnhideLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconUnhideMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconUnhideMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconUserDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconUserDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconUserLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconUserLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconUserMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconUserMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconWeb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconWeb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -240,5 +330,11 @@
   </data>
   <data name="IndicatorYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IndicatorYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginBanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginBanner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginFade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginFade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

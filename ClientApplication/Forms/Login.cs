@@ -1,5 +1,6 @@
 using ClientApplication.Forms;
-using ClientApplication.Services;
+using ClientApplication.Managers;
+using ClientApplication.Classes;
 using System.Runtime.InteropServices;
 
 namespace ClientApplication
@@ -13,19 +14,43 @@ namespace ClientApplication
 
         private void Login_Load(object sender, EventArgs e)
         {
-            BackColor = SettingsService.BackGroundColor();
-            SettingsService.SetThemeColors(LoginPanel.Controls);
+            BackColor = SettingsManager.BackGroundColor();
+            SettingsManager.SetThemeColors(Controls);
+
+            if (Properties.Settings.Default.Email != null)
+            {
+                Email.Text = Properties.Settings.Default.Email;
+                SaveEmailToggle.Checked = true;
+            }
         }
         public override void Refresh()
         {
             base.Refresh();
-            BackColor = SettingsService.BackGroundColor();
-            SettingsService.SetThemeColors(Controls);
+            BackColor = SettingsManager.BackGroundColor();
+            SettingsManager.SetThemeColors(Controls);
         }
         private void Enter_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManagerService.Main.Show();
+            if (User.Login(Email.Text.ToString(), Password.Text.ToString()))
+            {
+                Hide();
+                if (SaveEmailToggle.Checked)
+                {
+                    Properties.Settings.Default["Email"] = Email.Text.ToLower();
+                }
+                else
+                {
+                    Properties.Settings.Default["Email"] = "";
+                }
+
+                Password.Text = "";
+                Properties.Settings.Default.Save();
+                FormManager.Main.Show();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

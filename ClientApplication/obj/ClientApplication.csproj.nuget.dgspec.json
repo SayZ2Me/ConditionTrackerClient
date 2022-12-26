@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\derri\\OneDrive\\Documents\\GitHub\\ConditionTracker\\ClientApplication\\ClientApplication.csproj": {
-      "version": "1.0.0",
+      "version": "0.0.5",
       "restore": {
         "projectUniqueName": "C:\\Users\\derri\\OneDrive\\Documents\\GitHub\\ConditionTracker\\ClientApplication\\ClientApplication.csproj",
         "projectName": "ConditionTracker",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

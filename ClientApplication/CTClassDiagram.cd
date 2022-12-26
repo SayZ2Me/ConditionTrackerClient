@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClientApplication.Classes.ChartPoint">
+    <Position X="39.25" Y="28.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Classes\ChartPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Classes.Database">
+    <Position X="34" Y="27" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Classes\Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Classes.Device">
+    <Position X="35.75" Y="27.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCIEAAAAAgAAAEAABECAQgAAACAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Device.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Classes.Extensions">
+    <Position X="30.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Classes\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Classes.Sensor">
+    <Position X="39.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAFAAAAAQAAABAACEAAAAAAAEAAAAAAAIABAA=</HashCode>
+      <FileName>Classes\Sensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Classes.SettingsManager">
+    <Position X="41" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAgAEgAIAgAABIAAADAAAQAAAAAYgAAAQEAAAgBIA=</HashCode>
+      <FileName>Classes\SettingsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Classes.User">
+    <Position X="34" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAACIAAAAAAAABAAAAAhABAAAgAAAAQQAYABAE=</HashCode>
+      <FileName>Classes\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Forms.Main">
+    <Position X="32.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FEgAAACQBChAADAoCCiAAAkGAAAAgAQAAAAAQQBXCCA=</HashCode>
+      <FileName>Forms\Main.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="trayNotifyIcon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClientApplication.Forms.WorkPanels.Devices">
+    <Position X="35.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACBACBAAAACAAAgCAAAgAEAAAAACAABAAAA=</HashCode>
+      <FileName>Forms\WorkPanels\Devices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Forms.WorkPanels.Home">
+    <Position X="37.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAACCBAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\WorkPanels\Home.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Forms.WorkPanels.Monitoring">
+    <Position X="39.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACBAARAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\WorkPanels\Monitoring.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Forms.WorkPanels.Settings">
+    <Position X="41" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAgAAACBACAAgAACAAAAGCAAiAAoAAABEAAAAQAA=</HashCode>
+      <FileName>Forms\WorkPanels\Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Login">
+    <Position X="34" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAQQAAACBAIAAAAFCAIAACAIAAAACCAAAACQgAAAA=</HashCode>
+      <FileName>Forms\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Managers.ControlManager">
+    <Position X="28.75" Y="28" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAACAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\ControlManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="trayNotifyIcon" />
+      <Property Name="TrayNotifyIcon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClientApplication.Managers.FormManager">
+    <Position X="41" Y="12.25" Width="1.5" />
+    <AssociationLine Name="home" Type="ClientApplication.Forms.WorkPanels.Home" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="13.37" />
+        <Point X="38.25" Y="13.37" />
+        <Point X="38.25" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="monitoring" Type="ClientApplication.Forms.WorkPanels.Monitoring" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="13.664" />
+        <Point X="40" Y="13.664" />
+        <Point X="40" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="devices" Type="ClientApplication.Forms.WorkPanels.Devices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="13" />
+        <Point X="36.246" Y="13" />
+        <Point X="36.246" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="main" Type="ClientApplication.Forms.Main" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="12.312" />
+        <Point X="33" Y="12.312" />
+        <Point X="33" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="login" Type="ClientApplication.Login" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="12.625" />
+        <Point X="34.75" Y="12.625" />
+        <Point X="34.75" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Devices" Type="ClientApplication.Forms.WorkPanels.Devices" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="13.228" />
+        <Point X="36.805" Y="13.228" />
+        <Point X="36.805" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Monitoring" Type="ClientApplication.Forms.WorkPanels.Monitoring" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="13.792" />
+        <Point X="40.406" Y="13.792" />
+        <Point X="40.406" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Login" Type="ClientApplication.Login" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="12.812" />
+        <Point X="35.156" Y="12.812" />
+        <Point X="35.156" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Home" Type="ClientApplication.Forms.WorkPanels.Home" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="13.532" />
+        <Point X="38.656" Y="13.532" />
+        <Point X="38.656" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Main" Type="ClientApplication.Forms.Main" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="41" Y="12.438" />
+        <Point X="33.406" Y="12.438" />
+        <Point X="33.406" Y="16.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAACAAAAAAAAQASAAEAEgAgQBAAAMAQ=</HashCode>
+      <FileName>Managers\FormManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="devices" />
+      <Field Name="home" />
+      <Field Name="login" />
+      <Field Name="main" />
+      <Field Name="monitoring" />
+      <Field Name="settings" />
+      <Property Name="Devices" />
+      <Property Name="Monitoring" />
+      <Property Name="Login" />
+      <Property Name="Home" />
+      <Property Name="Main" />
+      <Property Name="Settings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClientApplication.Properties.Resources">
+    <Position X="30.5" Y="16.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>FgGQDHgAAKBMIgCBQEib8ADgA4QhwQARAIQIQWBPIpg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.Properties.Settings">
+    <Position X="41" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAAAAAAAAAIAAAAAABAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.ButtonClose">
+    <Position X="28.75" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAQAAACAAQgCAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>UserControls\WindowHandlers\ButtonClose.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.ButtonMaximize">
+    <Position X="27" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAAACAAAAAAAACAAAACAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>UserControls\WindowHandlers\ButtonMaximize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.ButtonMinimize">
+    <Position X="30.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAAAAIAAACAAAACAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>UserControls\WindowHandlers\ButtonMinimize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.ElementContainers.HidePanel">
+    <Position X="25.25" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAAAACAAAABAAoCIAQAiABAIAAEAIAAQAAAEAhA=</HashCode>
+      <FileName>UserControls\ElementContainers\HidePanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.ElementContainers.ScrollPanelVertical">
+    <Position X="27" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQCAAAAACAAAAAAQACAAAACAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\ElementContainers\ScrollPanelVertical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.InputHandlers.ButtonCustom">
+    <Position X="27" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAAIAgBAAAIACABAAAgAABAAAAAQIAAAAAECAEA=</HashCode>
+      <FileName>UserControls\InputHandlers\ButtonCustom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.InputHandlers.ButtonToggle">
+    <Position X="25.25" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAABEABAAAAgAAQAEAACAAAAAoAACAGAAAA=</HashCode>
+      <FileName>UserControls\InputHandlers\ButtonToggle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.InputHandlers.DropdownMenu">
+    <Position X="30.5" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAQAAAQkAEAAAAAAAAAkAAAABCAAAAAgA=</HashCode>
+      <FileName>UserControls\InputHandlers\DropdownMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.InputHandlers.MenuColorTable">
+    <Position X="25.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACBAAAAAAAAAwAAABAAAAIAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>UserControls\InputHandlers\MenuColorTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.InputHandlers.MenuRenderer">
+    <Position X="28.75" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAACAABAAAAAAAAAAACAACAAAA=</HashCode>
+      <FileName>UserControls\InputHandlers\MenuRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.InputHandlers.ScrollBarCustom">
+    <Position X="28.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAC4AQAAACCAQABAQACAAUACAAAAAAAAABAGAACEAAA=</HashCode>
+      <FileName>UserControls\InputHandlers\ScrollBarCustom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.InputHandlers.TextBoxCustom">
+    <Position X="27" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAIAACBABABAAIKACAACAAAAABAAAAAhCAAAAAA=</HashCode>
+      <FileName>UserControls\InputHandlers\TextBoxCustom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.OutputHandlers.ChartPanel">
+    <Position X="39.25" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAIAIEACAAABAAgACCAAACAAAAgACAAAAEEAABCAA=</HashCode>
+      <FileName>UserControls\OutputHandlers\ChartPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientApplication.UserControls.OutputHandlers.DevicePanel">
+    <Position X="35.75" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAASAKhAAAAAAACIJQACAwAABAAAAAAIEAAFAQA=</HashCode>
+      <FileName>UserControls\OutputHandlers\DevicePanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="device" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.Windows.Forms.NotifyIcon">
+    <Position X="32.25" Y="26.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

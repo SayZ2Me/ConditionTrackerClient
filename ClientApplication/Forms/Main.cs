@@ -1,35 +1,34 @@
-﻿using ClientApplication.Services;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
+﻿using ClientApplication.Managers;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace ClientApplication.Forms
 {
     public partial class Main : Form
     {
         private Size formSize;
+        NotifyIcon trayNotifyIcon = ControlManager.TrayNotifyIcon;
         public Main()
         {
             InitializeComponent();
-            MaximizedBounds = Screen.FromHandle(Handle).WorkingArea;
         }
+
+        #region [ Window behavior DLL import ]
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        #endregion [ Window behavior DLL import ]
+
         private void Header_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(Handle, 0x112, 0xf012, 0);
         }
+
+        #region [ Window behavior WndProc override ]
+
         protected override void WndProc(ref Message m)
         {
             if (WindowState == FormWindowState.Maximized)
@@ -112,29 +111,49 @@ namespace ClientApplication.Forms
             base.WndProc(ref m);
         }
 
+        #endregion [ Window behavior WndProc override ]
+
         private void Main_Load(object sender, EventArgs e)
         {
-            BackColor = SettingsService.BackGroundColor();
-            SettingsService.SetThemeColors(Controls);
+            LoadForm(FormManager.Home);
+            BackColor = SettingsManager.BackGroundColor();
+            SettingsManager.SetThemeColors(Controls);
         }
+
         public override void Refresh()
         {
             base.Refresh();
-            BackColor = SettingsService.BackGroundColor();
-            SettingsService.SetThemeColors(Controls);
+            MaximizedBounds = Screen.PrimaryScreen.WorkingArea;
+            BackColor = SettingsManager.BackGroundColor();
+            SettingsManager.SetThemeColors(Controls);
         }
-        public void LoadForm(object FormObject)
+
+        public void LoadForm(object formObject)
         {
-            if (WorkPanel.Panel1.Controls.Count > 0)
+            if (WorkPanel.Controls.Count > 0)
             {
-                WorkPanel.Panel1.Controls.RemoveAt(0);
+                WorkPanel.Invalidate();
+                WorkPanel.Controls.RemoveAt(0);
             }
-            Form Form = FormObject as Form;
-            Form.TopLevel = false;
-            Form.Dock = DockStyle.Fill;
-            Form.ShowInTaskbar = false;
-            WorkPanel.Panel1.Controls.Add(Form);
-            Form.Show();
+            if (formObject is not null)
+            {
+                Form form = formObject as Form;
+
+                ButtonHome.Checked = false;
+                ButtonDevices.Checked = false;
+                ButtonMonitoring.Checked = false;
+                ButtonSettings.Checked = false;
+                if (form.Text == "Home") { ButtonHome.Checked = true; }
+                if (form.Text == "Devices") { ButtonDevices.Checked = true; }
+                if (form.Text == "Monitoring") { ButtonMonitoring.Checked = true; }
+                if (form.Text == "Settings") { ButtonSettings.Checked = true; }
+
+                form.TopLevel = false;
+                form.Dock = DockStyle.Fill;
+                form.ShowInTaskbar = false;
+                WorkPanel.Controls.Add(form);
+                form.Show();
+            }
         }
         private void ButtonShutdown_Click(object sender, EventArgs e)
         {
@@ -147,38 +166,30 @@ namespace ClientApplication.Forms
         }
         private void MinimizeToTrayShutdownMenuButton_Click(object sender, EventArgs e)
         {
-            NotifyIcon.Visible = true;
-            NotifyIcon.ShowBalloonTip(5);
-            ShowInTaskbar = false;
+            trayNotifyIcon.Visible = true;
+            trayNotifyIcon.ShowBalloonTip(5);
             Hide();
-        }
-        private void NotifyIcon_Click(object sender, EventArgs e)
-        {
-            NotifyIcon.Visible = false;
-            ShowInTaskbar = true;
-            Show();
         }
         private void LogoutShutdownMenuButton_Click(object sender, EventArgs e)
         {
-            FormManagerService.Login.Show();
+            FormManager.Login.Show();
             Hide();
         }
-
         private void ButtonHome_Click(object sender, EventArgs e)
         {
-            LoadForm(FormManagerService.Home);
+            LoadForm(FormManager.Home);
         }
         private void ButtonDevices_Click(object sender, EventArgs e)
         {
-            LoadForm(FormManagerService.Devices);
+            LoadForm(FormManager.Devices);
         }
         private void ButtonMonitoring_Click(object sender, EventArgs e)
         {
-            LoadForm(FormManagerService.Monitoring);
+            LoadForm(FormManager.Monitoring);
         }
         private void ButtonSettings_Click(object sender, EventArgs e)
         {
-            LoadForm(FormManagerService.Settings);
+            LoadForm(FormManager.Settings);
         }
     }
 }

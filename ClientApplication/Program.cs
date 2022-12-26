@@ -1,4 +1,5 @@
-using ClientApplication.Services;
+using ClientApplication.Managers;
+using ClientApplication.Classes;
 using System.DirectoryServices.ActiveDirectory;
 
 namespace ClientApplication
@@ -8,9 +9,11 @@ namespace ClientApplication
         [STAThread]
         static void Main()
         {
-            SettingsService.IsThemeDark = Properties.Settings.Default.DarkTheme;
             ApplicationConfiguration.Initialize();
-            Application.Run(FormManagerService.Login);
+            HttpManager.Ping();
+            SettingsManager.IsThemeDark = Properties.Settings.Default.DarkTheme;
+            FormManager.RefreshAll();
+            Application.Run(FormManager.Login);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using ClientApplication.Services;
+﻿using ClientApplication.Managers;
 using ClientApplication.UserControls.InputHandlers;
 using System;
 using System.Collections.Generic;
@@ -20,8 +20,8 @@ namespace ClientApplication.Forms.WorkPanels
         }
         private void Settings_Load(object sender, EventArgs e)
         {
-            BackColor = SettingsService.BackGroundColor();
-            SettingsService.SetThemeColors(Controls);
+            BackColor = SettingsManager.BackGroundColor();
+            SettingsManager.SetThemeColors(Controls);
 
             AppCloseToggle.Checked = Properties.Settings.Default.AppClose;
             DarkThemeToggle.Checked = Properties.Settings.Default.DarkTheme;
@@ -29,21 +29,19 @@ namespace ClientApplication.Forms.WorkPanels
         public override void Refresh()
         {
             base.Refresh();
-            BackColor = SettingsService.BackGroundColor();
-            SettingsService.SetThemeColors(Controls);
+            BackColor = SettingsManager.BackGroundColor();
+            SettingsManager.SetThemeColors(Controls);
         }
         private void DarkThemeToggle_CheckStateChanged(object sender, EventArgs e)
         {
-            SettingsService.IsThemeDark = DarkThemeToggle.Checked;
+            SettingsManager.IsThemeDark = DarkThemeToggle.Checked;
             Properties.Settings.Default["DarkTheme"] = DarkThemeToggle.Checked;
-            FormManagerService.RefreshAll();
+            Properties.Settings.Default.Save();
+            FormManager.RefreshAll();
         }
         private void AppCloseToggle_CheckStateChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default["AppClose"] = AppCloseToggle.Checked;
-        }
-        private void SaveApplicationSettings_Click(object sender, EventArgs e)
-        {
             Properties.Settings.Default.Save();
         }
     }

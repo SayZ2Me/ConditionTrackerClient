@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Forms\AuxiliaryForms\Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -22,16 +25,37 @@
     <Compile Update="UserControls\ElementContainers\HidePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControls\InputHandlers\ButtonResponsive.cs">
+    <Compile Update="UserControls\ElementContainers\ScrollPanelHorizontal.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\ElementContainers\ScrollPanelVertical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\InputHandlers\ButtonCustom.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Update="UserControls\InputHandlers\ButtonToggle.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="UserControls\InputHandlers\ChartControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControls\InputHandlers\DropdownMenu.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="UserControls\InputHandlers\TextBox.cs">
+    <Compile Update="UserControls\InputHandlers\ScrollBarHorizontal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\InputHandlers\ScrollBarVertical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\InputHandlers\TextBoxCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\OutputHandlers\ChartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\OutputHandlers\DevicePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControls\WindowHandlers\ButtonClose.cs">
@@ -43,5 +67,10 @@
     <Compile Update="UserControls\WindowHandlers\ButtonMinimize.cs">
       <SubType>UserControl</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="UserControls\OutputHandlers\DevicePanel.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

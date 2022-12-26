@@ -1,56 +1,75 @@
-﻿using ClientApplication.Services;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.ComponentModel;
 
 namespace ClientApplication.UserControls.ElementContainers
 {
     public partial class HidePanel : UserControl
     {
-        bool Hided = true;
-        Panel ParentPanel;
+        private bool _hided = true;
+        private Panel _parentPanel;
+
         [EditorBrowsable(EditorBrowsableState.Always)]
         [Browsable(true)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         [Bindable(true)]
-        [Category("Slide panel")]
+        [Category("Параметры анимации")]
         public int MaxWidth { get; set; }
-        [Category("Slide panel")]
+        [Category("Параметры анимации")]
         public int MinWidth { get; set; }
-        [Category("Slide panel")]
+        [Category("Параметры анимации")]
         public int Step { get; set; }
+        [Category("Внешний вид")]
+        public Image IconShowDark { get; set; }
+        [Category("Внешний вид")]
+        public Image IconShowLight { get; set; }
+        [Category("Внешний вид")]
+        public Image IconShowMain { get; set; }
+        [Category("Внешний вид")]
+        public Image IconHideDark { get; set; }
+        [Category("Внешний вид")]
+        public Image IconHideLight { get; set; }
+        [Category("Внешний вид")]
+        public Image IconHideMain { get; set; }
         public HidePanel()
         {
             InitializeComponent();
         }
+        private void SetResources()
+        {
+            if (_hided)
+            {
+                HidePanelButton.IconDark = IconShowDark;
+                HidePanelButton.IconLight = IconShowLight;
+                HidePanelButton.IconHighLight = IconShowMain;
+            }
+            else
+            {
+                HidePanelButton.IconDark = IconHideDark;
+                HidePanelButton.IconLight = IconHideLight;
+                HidePanelButton.IconHighLight = IconHideMain;
+            }
+        }
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if (Hided)
+            if (_hided)
             {
-                ParentPanel.Width += Step;
-                if (ParentPanel.Width > MaxWidth - Step)
+                _parentPanel.Width += Step;
+                if (_parentPanel.Width > MaxWidth - Step)
                 {
                     Timer.Stop();
-                    ParentPanel.Width = MaxWidth;
-                    Hided = false;
-                    BackgroundImage = Properties.Resources.IconLeftBig;
+                    _parentPanel.Width = MaxWidth;
+                    _hided = false;
+                    SetResources();
                 }
             }
             else
             {
-                ParentPanel.Width -= Step;
-                if (ParentPanel.Width < MinWidth + Step)
+                _parentPanel.Width -= Step;
+                if (_parentPanel.Width < MinWidth + Step)
                 {
-                    ParentPanel.Width = MinWidth;
+                    _parentPanel.Width = MinWidth;
                     Timer.Stop();
-                    Hided = true;
-                    BackgroundImage = Properties.Resources.IconRightBig;
+                    _hided = true;
+                    SetResources();
                 }
             }
         }
@@ -62,22 +81,14 @@ namespace ClientApplication.UserControls.ElementContainers
         {
             try
             {
-                ParentPanel = (Panel)Parent;
-                ParentPanel.Width = MinWidth;
+                _parentPanel = (Panel)Parent;
+                _parentPanel.Width = MinWidth;
             }
             catch (Exception)
             {
                 throw new Exception("Slide panel button " + Name.ToString() + "on form" + ParentForm.Name.ToString() + " don`t have parent panel." );
             }
-        }
-        private void HidePanel_MouseEnter(object sender, EventArgs e)
-        {
-            BackColor = SettingsService.HighlightColor();
-        }
-
-        private void HidePanel_MouseLeave(object sender, EventArgs e)
-        {
-            BackColor = Color.Transparent;
+            SetResources();
         }
     }
 }
