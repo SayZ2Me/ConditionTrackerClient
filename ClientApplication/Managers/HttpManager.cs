@@ -8,7 +8,7 @@ namespace ClientApplication.Managers
     static class HttpManager
     {
         private static readonly string PingTemplate = "/User/Ping";
-        private static readonly string GetSaltTemplate = "/User/Authentication/GetSalt?email={0}";
+        private static readonly string GetPublicKeyTemplate = "/User/Authentication/GetPublicKey?email={0}";
         private static readonly string AuthenticationTemplate = "/User/Authentication/Authenticate?email={0}&password={1}";
         private static readonly string GetDevicesTemplate = "/Device/GetDevices?accessToken={0}";
         private static readonly string GetSensorsTemplate = "/Sensor/GetSensors?accessToken={0}&deviceId={1}";
@@ -28,13 +28,15 @@ namespace ClientApplication.Managers
 
             return content;
         }
-        public static string GetSalt(string email)
+        public static string GetPublicKey(string email)
         {
-            HttpResponseMessage response = LoadData(new Uri(uri + string.Format(GetSaltTemplate, email)));
+            HttpResponseMessage response = LoadData(new Uri(uri + string.Format(GetPublicKeyTemplate, email)));
             if (!ValidateResponse(response)) {
                 return "";
             }
-            string content = response.Content.ReadAsStringAsync().Result.Replace("\"", "");
+            string content = response.Content.ReadAsStringAsync().Result.Replace("\\n", "");
+
+            content = content.Substring(1, content.Length - 2).Replace("\\","");
 
             return content;
         }

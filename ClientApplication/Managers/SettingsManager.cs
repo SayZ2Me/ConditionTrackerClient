@@ -12,7 +12,7 @@ namespace ClientApplication.Managers
         private static readonly Color _highlightDark = ColorTranslator.FromHtml("#8888f0");
         private static readonly Color _headerDark = ColorTranslator.FromHtml("#424250");
         private static readonly Color _backGroundDark = ColorTranslator.FromHtml("#373740");
-        private static readonly Color _panelDark = ColorTranslator.FromHtml("#35353e");
+        private static readonly Color _panelDark = ColorTranslator.FromHtml("#2E2E34");
         private static readonly Color _textDark = ColorTranslator.FromHtml("#ffefefef");
 
         private static readonly Color _backGroundLight = ColorTranslator.FromHtml("#e8e8f1");

@@ -22,14 +22,26 @@ namespace ClientApplication.Classes
         public string Name { get { return _name; } }
         public string Email { get { return _Email; } }
 
-        private static string GetPasswordHash(string password, string salt)
+        public static string Encrypt(string textToEncrypt, string publicKeyString)
         {
-            var sha256encryption = new SHA256Managed();
-            string hash = string.Empty;
-            byte[] encrypted = sha256encryption.ComputeHash(Encoding.ASCII.GetBytes(salt + password));
-            foreach (byte theByte in encrypted) { hash += theByte.ToString("x2"); }
-            return hash;
+            var bytesToEncrypt = Encoding.UTF8.GetBytes(textToEncrypt);
+
+            using (var rsa = new RSACryptoServiceProvider(2048))
+            {
+                try
+                {
+                    rsa.FromXmlString(publicKeyString.ToString());
+                    var encryptedData = rsa.Encrypt(bytesToEncrypt, true);
+                    var base64Encrypted = Convert.ToBase64String(encryptedData);
+                    return base64Encrypted;
+                }
+                finally
+                {
+                    rsa.PersistKeyInCsp = false;
+                }
+            }
         }
+
         public static User GetInstance()
         {
             if (_instance == null)
@@ -43,11 +55,11 @@ namespace ClientApplication.Classes
         }
         public static bool Login(string email, string password)
         {
-            string salt = HttpManager.GetSalt(email);
+            string publicKeyString = HttpManager.GetPublicKey(email);
 
-            string passwordHash = GetPasswordHash(password, salt);
+            var encryptedPassword = Encrypt(password, publicKeyString).Replace("=","");
 
-            KeyValuePair<HttpStatusCode, string> response = HttpManager.Authenticate(email, passwordHash);
+            KeyValuePair<HttpStatusCode, string> response = HttpManager.Authenticate(email, encryptedPassword.Replace("+","="));
 
             if (response.Key == HttpStatusCode.OK)
             {

@@ -20,7 +20,7 @@ namespace ClientApplication.UserControls.OutputHandlers
         private double _midVal = 0;
         private double _highVal = 0;
 
-        private double _chartWidth = 0;
+        private double _chartWidth = 0; 
         private double _chartHeight = 0;
         private double _chartScaleOnX = 0;
         private double _chartScaleOnY = 0;
